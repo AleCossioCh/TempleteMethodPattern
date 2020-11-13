@@ -15,7 +15,7 @@ public class PhoneFileProcess extends AbstractFileTemplete{
             throw new Exception("Nombre del archivo no valido, debe terminar con .telefono");
         }
 
-        if (fileName.length() != 7){
+        if (fileName.length() != 12){
             throw new Exception("El documento no tiene el formato esperado");
         }
     }

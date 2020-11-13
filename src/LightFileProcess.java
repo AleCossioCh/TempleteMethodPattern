@@ -12,10 +12,10 @@ public class LightFileProcess extends AbstractFileTemplete {
     @Override
     protected void validateClient() throws Exception {
         String fileName = file.getName();
-        if(fileName.endsWith(".luz")){
+        if(!fileName.endsWith(".luz")){
             throw new Exception("Nombre de archivo no valido, debe terminar en .luz");
         }
-        if(fileName.length()!= 16){
+        if(fileName.length()!= 15){
             throw new Exception("El documento no tiene el formato esperado");
         }
     }
